@@ -21,232 +21,238 @@
         </nav>
         <!-- Experiment Blocks -->
 
-        <div>
+        <main>
             <search>
                 <form>
                     <label for="query">Find something</label>
                     <input id="query" name="q" type="search">
-                    <button type="submit">search</button>
-                </form>
-            </search>
-        </div>
-        
-        <div>
-            <h2>Behind the scenes photo:</h2>
-            <picture>
-                <img src="./work.png" alt="work template" >
-            </picture>
-            <h2>Experiments</h2>
-
-
-            <h3>Current classes:</h3>
-            <ol>
-                <li>CSE 134B</li>
-            </ol>
-
-            <h3>Programming Languages I Know</h3>
-            <ul>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>HTML/CSS</li>
-            </ul>
-
-            <h3>Search Programming Resources</h3>
-            
-            <input list="programming-resources" id="resource-search" name="resource-search" placeholder="Search resources...">
-            <datalist id="programming-resources">
-                <option value="MDN Web Docs">
-                <option value="W3Schools">
-                <option value="Stack Overflow">
-                <option value="GitHub">
-                <option value="Dev.to">
-            </datalist>
-            
-
-            <h3>CSE 134B Calendar</h3>
-            <iframe
-                src="https://ucsd-cse130.github.io/wi25/calendar.html"
-                width="1300"
-                height="1300"
-            ></iframe>
-
-            <h3>Codeblocks</h3>
-            <pre>
-                <code>
-                <del>
-                print "Hello, World!"
-                </del>
-                <ins>
-                print("Hello, World!")
-                </ins>
-
-
-                </code>
-            </pre>
-
-            <h3>HTML YT Video</h3>
-            <video
-                src="htmlvideo.mp4"
-                height="600"
-                controls
-            ></video>
-            <p class="video-caption">
-                A video of HTML in 100 seconds
-            </p>
-
-            <div>
-                <span>
-                    If the audio is not working, press <kbd>Ctrl</kbd> +
-                    <kbd>Shift</kbd> + <kbd>R</kbd> to force refresh the page.
-                </span>
-
-                <aside>
-                    (Credit to Fireship for the video!)
-                </aside>
-                <span>
-                    If you dont want to watch the video and <b> only want to listen</b>
-
-                    to the audio, play the audio <i>below</i>:
-                </span>
-            </div>
-
-
-            <audio controls>
-                <source src="htmlvideo.mp4" type="video/mp4" >
-            </audio>
-
-            <h3>Canvas</h3>
-            <canvas id="experiment-canvas" width="200" height="100"></canvas>
-            <script>
-                const canvas = document.getElementById("experiment-canvas");
-                const ctx = canvas.getContext("2d");
-
-                ctx.fillStyle = "red";
-                ctx.fillRect(0, 0, 200, 100);
-            </script>
-
-
-            <h3>FAQ</h3>
-            <details>
-                <summary>
-                    What is the purpose of this website?
-                </summary>
-                <p>
-                    This website is a collection of experiments I have done in HTML for my class.
-                </p>
-            </details>
-
-            <h3>Random Quote</h3>
-            <blockquote>
-                <p>
-                    "Stay Hungry. Stay Foolish" - <cite>Steve Jobs</cite>
-                </p>
-            </blockquote>
-
-            
-
-            <h3>Column Groups</h3>
-
-            <table>
-                <caption>Skills and Experience Table</caption>
-                <colgroup>
-                    <col>
-                    <col>
-                </colgroup>
-                <tr>
-                    <th>Skill</th>
-                    <th>Experience</th>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>3</td>
-                </tr>
-            </table>
-
-            
-
-            <h3>Poll Experiment</h3>
-            <fieldset>
-                <h3>Poll Experiment</h3>
-              
-                    <fieldset>
-                        <legend>Poll</legend>
-                        <label for="poll">What is your favorite color?</label>
-                        <select name="poll" id="poll">
-                            <optgroup label="Red">
-                                <option value="Red">Red</option>
-                                <option value="Orange">Orange</option>
-                                <option value="Yellow">Yellow</option>
-                            </optgroup>
-
-                            <optgroup label="Blue">
-                                <option value="Blue">Blue</option>
-                                <option value="Purple">Purple</option>
-                                <option value="Pink">Pink</option>
-                            </optgroup>
-
-                            <optgroup label="Green">
-                                <option value="Green">Green</option>
-                            </optgroup>
-                        </select>
-                        
-                        <button type="submit">Submit</button>
-
-                    </fieldset>
-               
-            </fieldset>
-
-
-            <div>
-                <h3>Custom Element</h3>
-            </div>
-            <lorem-ipsum></lorem-ipsum>
-    
-            <hello-world>
-                <p>Hello, World!</p>
-                <script>
-                    console.log("Hello, World!");
-                </script>
-            </hello-world>
-
-            <h3>Search Bar</h3>
-            <dialog open>
-                <form method="dialog">
-                    <label for="search">Search</label>
-                    <input type="search" id="search" name="search" >
                     <button type="submit">Search</button>
                 </form>
-            </dialog>
-            <h3>Form Experiment</h3>
-           <br>
-           <br>
-           <br>
-           <br>
-           <br>
-            <dialog open>
-                <form method="dialog">
-                    <label for="name">Name</label>
+            </search>
 
-                    <input type="text" id="name" name="name" >
-                    <fieldset>
-                        <legend>Gender</legend>
-                        <label for="male">Male</label>
-                        <input type="radio" id="male" name="gender" value="male" >
-                        <label for="female">Female</label>
-                        <input type="radio" id="female" name="gender" value="female" >
-                    </fieldset>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" >
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <button type="submit">Submit & close</button>
+            <div>
+                <h2>Behind the scenes photo:</h2>
+                <picture>
+                    <img src="./work.png" alt="work template" >
+                </picture>
+                <h2>Experiments</h2>
 
 
+                <h3>Current classes:</h3>
+                <ol>
+                    <li>CSE 134B</li>
+                </ol>
 
-                </form>
-            </dialog>
+                <h3>Programming Languages I Know</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>HTML/CSS</li>
+                </ul>
 
-        </div>
+                <h3>Search Programming Resources</h3>
+                
+                <input list="programming-resources" id="resource-search" name="resource-search" placeholder="Search resources...">
+                <datalist id="programming-resources">
+                    <option value="MDN Web Docs">
+                    <option value="W3Schools">
+                    <option value="Stack Overflow">
+                    <option value="GitHub">
+                    <option value="Dev.to">
+                </datalist>
+                
+
+                <h3>CSE 134B Calendar</h3>
+                <iframe
+                    src="https://ucsd-cse130.github.io/wi25/calendar.html"
+                    width="1300"
+                    height="1300"
+                ></iframe>
+
+                <h3>Codeblocks</h3>
+                <pre>
+                    <code>
+                    <del>
+                    print "Hello, World!"
+                    </del>
+                    <ins>
+                    print("Hello, World!")
+                    </ins>
+
+
+                    </code>
+                </pre>
+
+                <h3>HTML YT Video</h3>
+                <video
+                    src="htmlvideo.mp4"
+                    height="600"
+                    controls
+                ></video>
+                <p class="video-caption">
+                    A video of HTML in 100 seconds
+                </p>
+
+                <div>
+                    <span>
+                        If the audio is not working, press <kbd>Ctrl</kbd> +
+                        <kbd>Shift</kbd> + <kbd>R</kbd> to force refresh the page.
+                    </span>
+
+                    <aside>
+                        (Credit to Fireship for the video!)
+                    </aside>
+                    <span>
+                        If you dont want to watch the video and <b> only want to listen</b>
+
+                        to the audio, play the audio <i>below</i>:
+                    </span>
+                </div>
+
+
+                <audio controls>
+                    <source src="htmlvideo.mp4" type="video/mp4" >
+                </audio>
+
+                <h3>Canvas</h3>
+                <canvas id="experiment-canvas" width="200" height="100"></canvas>
+                <script>
+                    const canvas = document.getElementById("experiment-canvas");
+                    const ctx = canvas.getContext("2d");
+
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(0, 0, 200, 100);
+                </script>
+
+
+                <h3>FAQ</h3>
+                <details>
+                    <summary>
+                        What is the purpose of this website?
+                    </summary>
+                    <p>
+                        This website is a collection of experiments I have done in HTML for my class.
+                    </p>
+                </details>
+
+                <h3>Random Quote</h3>
+                <blockquote>
+                    <p>
+                        "Stay Hungry. Stay Foolish" - <cite>Steve Jobs</cite>
+                    </p>
+                </blockquote>
+
+                
+
+                <h3>Column Groups</h3>
+
+                <table>
+                    <caption>Skills and Experience Table</caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Experience</th>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+
+                
+
+                <h3>Poll Experiment</h3>
+                <fieldset>
+                    <h3>Poll Experiment</h3>
+                  
+                        <fieldset>
+                            <legend>Poll</legend>
+                            <label for="poll">What is your favorite color?</label>
+                            <select name="poll" id="poll">
+                                <optgroup label="Red">
+                                    <option value="Red">Red</option>
+                                    <option value="Orange">Orange</option>
+                                    <option value="Yellow">Yellow</option>
+                                </optgroup>
+
+                                <optgroup label="Blue">
+                                    <option value="Blue">Blue</option>
+                                    <option value="Purple">Purple</option>
+                                    <option value="Pink">Pink</option>
+                                </optgroup>
+
+                                <optgroup label="Green">
+                                    <option value="Green">Green</option>
+                                </optgroup>
+                            </select>
+                            
+                            <button type="submit">Submit</button>
+
+                        </fieldset>
+                   
+                </fieldset>
+
+
+                <div>
+                    <h3>Custom Element</h3>
+                </div>
+                <lorem-ipsum></lorem-ipsum>
+        
+                <hello-world>
+                    <p>Hello, World!</p>
+                    <script>
+                        console.log("Hello, World!");
+                    </script>
+                </hello-world>
+
+                <h3>Search Bar</h3>
+                <dialog open>
+                    <form method="dialog">
+                        <label for="search">Search</label>
+                        <input type="search" id="search" name="search" >
+                        <button type="submit">Search</button>
+                    </form>
+                </dialog>
+                <h3>Form Experiment</h3>
+               <br>
+               <br>
+               <br>
+               <br>
+               <br>
+                <dialog open>
+                    <form method="dialog">
+                        <label for="name">Name</label>
+
+                        <input type="text" id="name" name="name" >
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="gender" value="male" >
+                            <label for="female">Female</label>
+                            <input type="radio" id="female" name="gender" value="female" >
+                        </fieldset>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" >
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <button type="submit">Submit & close</button>
+
+
+
+                    </form>
+                </dialog>
+
+            </div>
+            
+
+
+
+
+
+        </main>
         
 
 
