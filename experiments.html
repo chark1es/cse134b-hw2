@@ -172,6 +172,33 @@ print("Hello, World!")
                     </fieldset>
                
             </fieldset>
+
+
+            <div>
+                <h3>Custom Element</h3>
+                <style>
+                    lorem-ipsum {
+                        display: block;
+                        font-size: 20px;
+                        
+                    }
+                
+                    lorem-ipsum::before {
+                        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.";
+                    }
+                </style>
+                <lorem-ipsum></lorem-ipsum>
+    
+                <hello-world>
+                    <p>Hello, World!</p>
+                    <script>
+    
+                        console.log("Hello, World!");
+                    </script>
+                </hello-world>
+            </div>
+
+
             <h3>Search Bar</h3>
             <dialog open>
                 <form method="dialog">
@@ -209,6 +236,10 @@ print("Hello, World!")
             </dialog>
 
         </div>
+        
+
+
+
 
 
     </body>
