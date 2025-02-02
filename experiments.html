@@ -2,6 +2,16 @@
 <html lang="en">
     <head>
         <title>Experiments</title>
+        <style>
+            lorem-ipsum {
+                display: block;
+                font-size: 20px;
+            }
+        
+            lorem-ipsum::before {
+                content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.";
+            }
+        </style>
     </head>
     <body>
         <!-- Navigation -->
@@ -38,12 +48,12 @@
             <h3>Codeblocks</h3>
             <pre>
                 <code>
-<del>
-print "Hello, World!"
-</del>
-<ins>
-print("Hello, World!")
-</ins>
+                <del>
+                print "Hello, World!"
+                </del>
+                <ins>
+                print("Hello, World!")
+                </ins>
 
 
                 </code>
@@ -165,27 +175,14 @@ print("Hello, World!")
             <div>
                 <h3>Custom Element</h3>
             </div>
-            <style>
-                lorem-ipsum {
-                    display: block;
-                    font-size: 20px;
-                }
-            
-                lorem-ipsum::before {
-                    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.";
-                }
-            </style>
             <lorem-ipsum></lorem-ipsum>
     
-                <hello-world>
-                    <p>Hello, World!</p>
-                    <script>
-    
-                        console.log("Hello, World!");
-                    </script>
-                </hello-world>
-            </div>
-
+            <hello-world>
+                <p>Hello, World!</p>
+                <script>
+                    console.log("Hello, World!");
+                </script>
+            </hello-world>
 
             <h3>Search Bar</h3>
             <dialog open>
