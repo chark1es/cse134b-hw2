@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <meta name="description" content="A website about me" />
+    </head>
+    <body>
+        <noscript>Please turn on JavaScript to view this website!</noscript>
+        <!-- Navigation -->
+        <nav class="nav-bar">
+            <a href="./index.html">Home</a>
+            <a href="./experiments.html">Experiments</a>
+        </nav>
+
+        <!-- Left Column -->
+        <div class="left-column">
+            <svg width="300" height="300">
+                <circle cx="150" cy="150" r="100" fill="gray" />
+            </svg>
+            <figure>
+                <img src="https://placehold.co/600x400?text=LOGO" />
+                <figcaption>
+                    <p>A placeholder for my logo</p>
+                </figcaption>
+            </figure>
+
+            <header>
+                <h1>Charles Nguyen</h1>
+                <h2>Computer Science Undergraduate at UC San Diego</h2>
+            </header>
+            <hr />
+            <section>
+                <h3>About Me</h3>
+                <hgroup>
+                    <p>
+                        My name is <strong>Charles Nguyen</strong>, and I am a
+                        third-year Computer Science undergraduate at the
+                        <a href="https://ucsd.edu"
+                            >University of California, San Diego</a
+                        >
+                    </p>
+                    <p>
+                        My primary focus is on frontend development, intending
+                        to advance my skills to become a proficient full-stack
+                        developer. <br />I am currently positioned as the
+                        <em>Webmaster</em> for the
+
+                        <dfn>
+                            <abbr
+                                title="Institute of Electrical and Electronics Engineers"
+                            >
+                                IEEE
+                            </abbr>
+
+                            Student Branch at UCSD
+                        </dfn>
+                        , where I am actively involved in improving the
+                        organization’s technical infrastructure.<br />
+
+                        My contributions include implementing a modern backend
+                        system with features such as version control, OpenID
+                        authentication, password management, and containerized
+                        solutions using Docker.
+                    </p>
+                </hgroup>
+            </section>
+            <hr />
+            <section>
+                <address>
+                    <h3>You may reach me at:</h3>
+                    <dl>
+                        <dt>My email:</dt>
+                        <dd>
+                            <a href="mailto:cmn010@ucsd.edu">cmn010@ucsd.edu</a>
+                        </dd>
+
+                        <dt>
+                            <del>My linkedin:</del>
+                        </dt>
+                    </dl>
+                </address>
+            </section>
+        </div>
+        <!-- Right Column -->
+        <div class="right-column">
+            <h2>Skills</h2>
+            <template>
+                <h3>Python</h3>
+                <!-- Experience Bar out of 5-->
+                <progress value="3" max="5"></progress>
+            </template>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                Made by Charles Nguyen, all files are used for educational
+                purposes
+            </p>
+        </footer>
+    </body>
+    <style>
+        .nav-bar {
+            border: 12px solid black;
+        }
+        .left-column {
+            border: 12px solid black;
+        }
+        .right-column {
+            border: 12px solid black;
+        }
+    </style>
+</html>

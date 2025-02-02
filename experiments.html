@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <title>Experiments</title>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="nav-bar">
+            <a href="./index.html">Home</a>
+            <a href="./experiments.html">Experiments</a>
+        </nav>
+        <!-- Experiment Blocks -->
+
+
+        
+         
+        <div>
+            <h2>Behind the scenes photo:</h2>
+            <picture>
+                <img src="./work.png" alt="work template" />
+            </picture>
+            <h2>Experiments</h2>
+
+
+            <h3>Current classes:</h3>
+            <ol>
+                <li>CSE 134B</li>
+              
+            </ol>
+
+            <h3>CSE 134B Calendar</h3>
+            <iframe
+                src="https://ucsd-cse130.github.io/wi25/calendar.html"
+                width="1300"
+                height="1300"
+            ></iframe>
+
+            <h3>Codeblocks</h3>
+            <pre>
+                <code>
+<del>
+print "Hello, World!"
+</del>
+<ins>
+print("Hello, World!")
+</ins>
+
+
+                </code>
+            </pre>
+
+            <h3>HTML YT Video</h3>
+            <video
+                src="htmlvideo.mp4"
+                type="video/mp4"
+                height="600"
+                controls
+            ></video>
+            <caption>
+                <p>A video of HTML in 100 seconds</p>
+            </caption>
+
+            <div>
+                <span>
+                    If the audio is not working, press <kbd>Ctrl</kbd> +
+                    <kbd>Shift</kbd> + <kbd>R</kbd> to force refresh the page.
+                </span>
+
+                <aside>
+                    (Credit to Fireship for the video!)
+                </aside>
+                <span>
+                    If you dont want to watch the video and <b> only want to listen</b>
+
+                    to the audio, play the audio <i>below</i>:
+                </span>
+            </div>
+
+
+            <audio controls>
+                <source src="htmlvideo.mp4" type="video/mp4" />
+            </audio>
+
+            <h3>Canvas</h3>
+            <canvas id="experiment-canvas" width="200" height="100"></canvas>
+            <script>
+                const canvas = document.getElementById("experiment-canvas");
+                const ctx = canvas.getContext("2d");
+
+                ctx.fillStyle = "red";
+                ctx.fillRect(0, 0, 200, 100);
+            </script>
+
+
+            <h3>FAQ</h3>
+            <details>
+                <summary>
+                    What is the purpose of this website?
+                </summary>
+                <p>
+                    This website is a collection of experiments I have done in HTML for my class.
+                </p>
+            </details>
+
+            <h3>Random Quote</h3>
+            <blockquote>
+                <p>
+                    "Stay Hungry. Stay Foolish" - <cite>Steve Jobs</cite>
+                </p>
+            </blockquote>
+
+            
+
+            <h3>Column Groups</h3>
+
+            <table>
+                <colgroup>
+                    <col />
+                    <col span="2" />
+
+                    <col span="2" />
+                </colgroup>
+                <tr>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Experience</th>
+                    </tr>
+                </tr>
+                <tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>3</td>
+                    </tr>
+                </tr>
+            </table>
+
+            
+
+            <h3>Poll Experiment</h3>
+            <fieldset>
+                <h3>Poll Experiment</h3>
+              
+                    <fieldset>
+                        <legend>Poll</legend>
+                        <label for="poll">What is your favorite color?</label>
+                        <select name="poll" id="poll">
+                            <datalist id="colors">
+                                <optgroup label="Red">
+                                    <option value="Red">Red</option>
+                                    <option value="Orange">Orange</option>
+                                    <option value="Yellow">Yellow</option>
+                                </optgroup>
+
+                                <optgroup label="Blue">
+                                    <option value="Blue">Blue</option>
+                                    <option value="Purple">Purple</option>
+                                    <option value="Pink">Pink</option>
+
+                                </optgroup>
+                                <optgroup label="Green">
+                                    <option value="Green">Green</option>
+    
+
+                                </optgroup>
+    
+                                
+                            </datalist>
+                            
+                        </select>
+                        
+                        <button type="submit">Submit</button>
+
+                    </fieldset>
+               
+            </fieldset>
+            <h3>Search Bar</h3>
+            <dialog open>
+                <form method="dialog">
+                    <label for="search">Search</label>
+                    <input type="search" id="search" name="search" />
+                    <button type="submit">Search</button>
+                </form>
+            </dialog>
+            <h3>Form Experiment</h3>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+            <dialog open>
+                <form method="dialog">
+                    <label for="name">Name</label>
+
+                    <input type="text" id="name" name="name" />
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male" />
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female" />
+                    </fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" />
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button type="submit">Submit & close</button>
+
+
+
+                </form>
+            </dialog>
+
+        </div>
+
+
+    </body>
+</html>
