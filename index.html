@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>My Website</title>
         <meta name="description" content="A website about me" />
@@ -30,8 +30,9 @@
             </header>
             <hr />
             <section>
-                <h3>About Me</h3>
                 <hgroup>
+                    <h3>About Me</h3>
+
                     <p>
                         My name is <strong>Charles Nguyen</strong>, and I am a
                         third-year Computer Science undergraduate at the
@@ -67,11 +68,15 @@
             <hr />
             <section>
                 <address>
-                    <h3>You may reach me at:</h3>
+                    <span>You may reach me at:</span>
                     <dl>
                         <dt>My email:</dt>
                         <dd>
-                            <a href="mailto:cmn010@ucsd.edu">cmn010@ucsd.edu</a>
+                            <dl>
+                                <a href="mailto:cmn010@ucsd.edu"
+                                    >cmn010@ucsd.edu</a
+                                >
+                            </dl>
                         </dd>
 
                         <dt>
@@ -98,16 +103,16 @@
                 purposes
             </p>
         </footer>
+        <style>
+            .nav-bar {
+                border: 12px solid black;
+            }
+            .left-column {
+                border: 12px solid black;
+            }
+            .right-column {
+                border: 12px solid black;
+            }
+        </style>
     </body>
-    <style>
-        .nav-bar {
-            border: 12px solid black;
-        }
-        .left-column {
-            border: 12px solid black;
-        }
-        .right-column {
-            border: 12px solid black;
-        }
-    </style>
 </html>
